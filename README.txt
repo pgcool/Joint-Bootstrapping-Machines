@@ -10,20 +10,22 @@ Dependecies:
 Directory Structure:
 
 Joint-Bootstrapping-Machines
+
   resources
     freebase-easy-14-04-14
 	  freebase_facts.txt 
-	  - Download from url http://freebase-easy.cs.uni-freiburg.de/dump/	
+	  - Download from url http://freebase-easy.cs.uni-freiburg.de/dump/
+	  
   data
     input
-	  sentences.txt 
+      sentences.txt 
 	  - Download corpus from url: https://drive.google.com/file/d/0B0CbnDgKi0PyM1FEQXJRTlZtSTg/view)
-	output
-	  BREE
-	    REL_ACQUIRED_ORG_ORG
-		  relationships_baseline.txt 
-		  - The output file containing a list of the relationships extracted from BREE system)
-	  BRET
+    output
+      BREE
+        REL_ACQUIRED_ORG_ORG
+          relationships_baseline.txt 
+          - The output file containing a list of the relationships extracted from BREE system)
+      BRET
         REL_ACQUIRED_ORG_ORG
           relationships_config5.txt
           - The output file containing a list of the relationships extracted from BRET system)
@@ -31,7 +33,8 @@ Joint-Bootstrapping-Machines
         REL_ACQUIRED_ORG_ORG
           relationships_config9.txt
           - The output file containing a list of the relationships extracted from BREJ system)
-	code
+		  
+    code
       automatic_evaluation
         index_dir
         - Directory of corpus-index
@@ -39,14 +42,14 @@ Joint-Bootstrapping-Machines
         index_whoosh.py
         - To create corpus-index in directory index_dir.
 		
-		Sentence.py
+        Sentence.py
         - To extract entities infomation, clean and filter.
 		
         easy_freebase_clean.py
         - To collect relationships facts from Freebase and prepare databases.
 		
         large_scale_evaluation_freebase.py
-		- To automatically evaluate relation extraction systems on large-scale 
+        - To automatically evaluate relation extraction systems on large-scale 
           (https://akbcwekex2012.files.wordpress.com/2012/05/8_paper.pdf).
 			
 
