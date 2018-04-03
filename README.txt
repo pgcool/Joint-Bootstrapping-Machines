@@ -19,7 +19,7 @@ Joint-Bootstrapping-Machines
   data
     input
       sentences.txt 
-	  - Download corpus from url: https://drive.google.com/file/d/0B0CbnDgKi0PyM1FEQXJRTlZtSTg/view)
+      - Download corpus from url: https://drive.google.com/file/d/0B0CbnDgKi0PyM1FEQXJRTlZtSTg/view)
     output
       BREE
         REL_ACQUIRED_ORG_ORG
@@ -58,7 +58,7 @@ Usage (Evaluation):
     $ python large_scale_evaluation_freebase.py threshold system_output rel_type database root_dir corpus-index
 	
 	
-    Example:
+Example:
 
     $ cd Joint-Bootstrapping-Machines/code/automatic_evaluation
  
