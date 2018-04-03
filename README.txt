@@ -1,12 +1,11 @@
 
-Joint Bootstrapping Machines for High Confidence Relation Extraction
-	
-	In conference proceedings of NAACL-HLT 2018.
+"Joint Bootstrapping Machines for High Confidence Relation Extraction" in conference proceedings of NAACL-HLT 2018.
 	
 	
 Dependecies:
 
-Python 2.7, Numpy, NLTK, Gensim, jellyfish, whoosh, etc.
+- Python 2.7, Numpy, NLTK, Gensim, jellyfish, whoosh, etc.
+
 	
 Directory Structure:
 
@@ -14,33 +13,43 @@ Joint-Bootstrapping-Machines
 
 	./resources
 		freebase-easy-14-04-14
-			freebase_facts.txt (Download from url http://freebase-easy.cs.uni-freiburg.de/dump/)
+			freebase_facts.txt 
+			(Download from url http://freebase-easy.cs.uni-freiburg.de/dump/)
 			
 	./data
 		input
-			sentences.txt (Download corpus from url: https://drive.google.com/file/d/0B0CbnDgKi0PyM1FEQXJRTlZtSTg/view)
+			sentences.txt 
+			(Download corpus from url: https://drive.google.com/file/d/0B0CbnDgKi0PyM1FEQXJRTlZtSTg/view)
 		output
 			BREE
 				REL_ACQUIRED_ORG_ORG
-					relationships_baseline.txt : The output file containing a list of the relationships extracted from BREE system)
+					relationships_baseline.txt 
+					- The output file containing a list of the relationships extracted from BREE system)
 			BRET
 				REL_ACQUIRED_ORG_ORG
-					relationships_config5.txt : The output file containing a list of the relationships extracted from BRET system)
+					relationships_config5.txt
+					- The output file containing a list of the relationships extracted from BRET system)
 			BREJ
 				REL_ACQUIRED_ORG_ORG
-					relationships_config9.txt : The output file containing a list of the relationships extracted from BREJ system)
+					relationships_config9.txt
+					- The output file containing a list of the relationships extracted from BREJ system)
 
 	./code
 		automatic_evaluation
-			index_dir : Directory of corpus-index
+			index_dir
+			- Directory of corpus-index
 			
-			index_whoosh.py : To create corpus-index in directory index_dir.
+			index_whoosh.py
+			- To create corpus-index in directory index_dir.
 			
-			Sentence.py : To extract entities infomation, clean and filter.
+			Sentence.py
+			- To extract entities infomation, clean and filter.
 			
-			easy_freebase_clean.py : To collect relationships facts from Freebase and prepare databases.
+			easy_freebase_clean.py
+			- To collect relationships facts from Freebase and prepare databases.
 			
-			large_scale_evaluation_freebase.py : To automatically evaluate relation extraction systems on large-scale (https://akbcwekex2012.files.wordpress.com/2012/05/8_paper.pdf).
+			large_scale_evaluation_freebase.py
+			- To automatically evaluate relation extraction systems on large-scale (https://akbcwekex2012.files.wordpress.com/2012/05/8_paper.pdf).
 			
 
 Usage (Evaluation):
