@@ -19,7 +19,7 @@ Joint-Bootstrapping-Machines
   data
     input
       sentences.txt 
-      - Download corpus from url: https://drive.google.com/file/d/0B0CbnDgKi0PyM1FEQXJRTlZtSTg/view)
+      - Download corpus from url: http://data.davidsbatista.net/sentences.txt.bz2
     output
       BREE
         REL_ACQUIRED_ORG_ORG
